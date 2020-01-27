@@ -80,7 +80,7 @@ GLmol.prototype.create = function(id, suppressAutoload) {
 // Add from ASE ase.data.vdw_radii
    this.vdwRadii = {"LI": 1.82, "NA": 2.27,
                    "CL": 1.75, "BR": 1.85, "SE": 1.90,
-                   "ZN": 1.39, "CU": 1.4, "NI": 1.63
+                   "ZN": 1.39, "CU": 1.4, "NI": 1.63,
              "H":1.2, "He":1.4, "Li":1.82, "Be":1.53,
              "B":1.92, "C":1.7, "N":1.55, "O":1.52,
              "F":1.47, "Ne":1.54, "Na":2.27, "Mg":1.73,
