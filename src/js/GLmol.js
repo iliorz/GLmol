@@ -625,9 +625,21 @@ GLmol.prototype.drawBondsAsStick = function(group, atomlist, bondR, atomR, ignor
    this.drawAtomsAsSphere(group, forSpheres, atomR, !scale, scale);
 };
 
-GLmol.prototype.drawBallAndStick = function({group, atomlist, bondR=0.2, atomR=0.3, ignoreNonbonded=false, multipleBonds=true, scale=0.2}) {
+GLmol.prototype.drawBallAndStick = function (_ref) {
+  var group = _ref.group,
+      atomlist = _ref.atomlist,
+      _ref$bondR = _ref.bondR,
+      bondR = _ref$bondR === void 0 ? 0.2 : _ref$bondR,
+      _ref$atomR = _ref.atomR,
+      atomR = _ref$atomR === void 0 ? 0.3 : _ref$atomR,
+      _ref$ignoreNonbonded = _ref.ignoreNonbonded,
+      ignoreNonbonded = _ref$ignoreNonbonded === void 0 ? false : _ref$ignoreNonbonded,
+      _ref$multipleBonds = _ref.multipleBonds,
+      multipleBonds = _ref$multipleBonds === void 0 ? true : _ref$multipleBonds,
+      _ref$scale = _ref.scale,
+      scale = _ref$scale === void 0 ? 0.2 : _ref$scale;
   // Template of drawBondsAsStick for ball and stick viewing
-  this.drawBondsAsStick(group, atomlist, bondR, atomR, ignoreNonbonded, multipleBonds, (!!scale) ? scale : undefined, 1.1)
+  this.drawBondsAsStick(group, atomlist, bondR, atomR, ignoreNonbonded, multipleBonds, !!scale ? scale : undefined, 1.1);
 };
 
 GLmol.prototype.defineCell = function() {
